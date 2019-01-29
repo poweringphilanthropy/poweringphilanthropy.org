@@ -1,0 +1,173 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Age Gate: User Registration\n"
+"POT-Creation-Date: 2018-12-05 14:49+0000\n"
+"PO-Revision-Date: 2018-08-15 22:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: age-gate-user-registration.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/class-age-gate-user-registration-admin.php:115
+#: dist/age-gate-user-registration/admin/class-age-gate-user-registration-admin.php:115
+msgid "Deactivate"
+msgstr ""
+
+#: admin/class-age-gate-user-registration-admin.php:142
+msgid "User registration"
+msgstr ""
+
+#: admin/partials/age-gate-user-registration-admin-display.php:24
+#: dist/age-gate-user-registration/admin/partials/age-gate-user-registration-admin-display.php:24
+msgid "Restrict registration"
+msgstr ""
+
+#: admin/partials/age-gate-user-registration-admin-display.php:38
+#: dist/age-gate-user-registration/admin/partials/age-gate-user-registration-admin-display.php:38
+#, php-format
+msgid "Age check users during %s registration"
+msgstr ""
+
+#: admin/partials/age-gate-user-registration-admin-display.php:50
+#: dist/age-gate-user-registration/admin/partials/age-gate-user-registration-admin-display.php:50
+msgid "Age check users during WooCommerce registration"
+msgstr ""
+
+#: admin/partials/age-gate-user-registration-admin-display.php:60
+#: dist/age-gate-user-registration/admin/partials/age-gate-user-registration-admin-display.php:60
+msgid "Age check users during WooCommerce checkout"
+msgstr ""
+
+#: admin/partials/age-gate-user-registration-admin-display.php:64
+#: dist/age-gate-user-registration/admin/partials/age-gate-user-registration-admin-display.php:64
+msgid ""
+"Standard registrations are disabled and WooCommerce/BuddyPress are not "
+"installed."
+msgstr ""
+
+#: admin/partials/age-gate-user-registration-admin-display.php:71
+#: admin/partials/age-gate-user-registration-admin-display.php:85
+#: dist/age-gate-user-registration/admin/partials/age-gate-user-registration-admin-display.php:71
+#: dist/age-gate-user-registration/admin/partials/age-gate-user-registration-admin-display.php:85
+msgid "Registration age"
+msgstr ""
+
+#: admin/partials/age-gate-user-registration-admin-display.php:79
+#: dist/age-gate-user-registration/admin/partials/age-gate-user-registration-admin-display.php:79
+msgid "years or older to register"
+msgstr ""
+
+#: admin/partials/age-gate-user-registration-admin-display.php:80
+#: dist/age-gate-user-registration/admin/partials/age-gate-user-registration-admin-display.php:80
+msgid "Leave blank to use age from Age Gate Restriction settings"
+msgstr ""
+
+#: admin/partials/age-gate-user-registration-admin-display.php:96
+#: dist/age-gate-user-registration/admin/partials/age-gate-user-registration-admin-display.php:96
+msgid "Store users date of birth when registering"
+msgstr ""
+
+#: admin/partials/age-gate-user-registration-admin-display.php:102
+#: dist/age-gate-user-registration/admin/partials/age-gate-user-registration-admin-display.php:102
+msgid "Invalid date error"
+msgstr ""
+
+#: admin/partials/age-gate-user-registration-admin-display.php:118
+#: dist/age-gate-user-registration/admin/partials/age-gate-user-registration-admin-display.php:118
+msgid "Registration error message"
+msgstr ""
+
+#: admin/partials/age-gate-user-registration-admin-display.php:134
+#: dist/age-gate-user-registration/admin/partials/age-gate-user-registration-admin-display.php:134
+msgid "Account error message"
+msgstr ""
+
+#: admin/partials/age-gate-user-registration-admin-display.php:149
+#: dist/age-gate-user-registration/admin/partials/age-gate-user-registration-admin-display.php:149
+msgid "Checkout error message"
+msgstr ""
+
+#: age-gate-user-registration.php:71
+#: dist/age-gate-user-registration/age-gate-user-registration.php:71
+msgid ""
+"You have activated Age Gate: User Registration but Age Gate is not installed"
+msgstr ""
+
+#: age-gate-user-registration.php:75
+#: dist/age-gate-user-registration/age-gate-user-registration.php:75
+#, php-format
+msgid "Age Gate: User Registration requires Age Gate %s or higher"
+msgstr ""
+
+#: dist/age-gate-user-registration/public/class-age-gate-user-registration-buddypress.php:106
+#: dist/age-gate-user-registration/public/class-age-gate-user-registration-default.php:50
+#: dist/age-gate-user-registration/public/class-age-gate-user-registration-woocommerce.php:110
+#: dist/age-gate-user-registration/public/class-age-gate-user-registration-woocommerce.php:192
+#: dist/age-gate-user-registration/public/class-age-gate-user-registration-woocommerce.php:234
+#: dist/age-gate-user-registration/public/class-age-gate-user-registration-woocommerce.php:280
+#: public/class-age-gate-user-registration-buddypress.php:106
+#: public/class-age-gate-user-registration-default.php:50
+#: public/class-age-gate-user-registration-woocommerce.php:110
+#: public/class-age-gate-user-registration-woocommerce.php:192
+#: public/class-age-gate-user-registration-woocommerce.php:234
+#: public/class-age-gate-user-registration-woocommerce.php:280
+msgid "Date of birth"
+msgstr ""
+
+#: dist/age-gate-user-registration/public/class-age-gate-user-registration-default.php:80
+#: dist/age-gate-user-registration/public/class-age-gate-user-registration-default.php:83
+#: public/class-age-gate-user-registration-default.php:80
+#: public/class-age-gate-user-registration-default.php:83
+msgid "ERROR"
+msgstr ""
+
+#: dist/age-gate-user-registration/public/class-age-gate-user-registration-default.php:123
+#: public/class-age-gate-user-registration-default.php:123
+msgid "Location"
+msgstr ""
+
+#: dist/age-gate-user-registration/public/class-age-gate-user-registration-default.php:127
+#: public/class-age-gate-user-registration-default.php:127
+msgid "Your location."
+msgstr ""
+
+#: dist/age-gate-user-registration/public/class-age-gate-user-registration-woocommerce.php:205
+#: dist/age-gate-user-registration/public/class-age-gate-user-registration-woocommerce.php:247
+#: public/class-age-gate-user-registration-woocommerce.php:205
+#: public/class-age-gate-user-registration-woocommerce.php:247
+msgid "Date of birth required"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Age Gate User Registration"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://agegate.io/addons/age-gate-user-registration"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"An Age Gate addon to check the age of users registering or using WooCommerce"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Phil Baker"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://agegate.io"
+msgstr ""

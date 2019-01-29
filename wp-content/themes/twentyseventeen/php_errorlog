@@ -1,9 +1,0 @@
-[11-Jun-2018 22:48:20 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/poweri33/public_html/poweringphilanthropy.org/wp-content/themes/twentyseventeen/404.php on line 13
-[15-Oct-2018 10:43:46 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/poweri33/public_html/poweringphilanthropy.org/wp-content/themes/twentyseventeen/404.php on line 13
-[17-Oct-2018 20:53:02 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/poweri33/public_html/poweringphilanthropy.org/wp-content/themes/twentyseventeen/404.php on line 13
-[22-Oct-2018 00:09:59 CST6CDT] PHP Fatal error:  Call to undefined function get_template_part() in /home/poweri33/public_html/poweringphilanthropy.org/wp-content/themes/twentyseventeen/footer.php on line 22
-[14-Nov-2018 09:28:54 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/poweri33/public_html/poweringphilanthropy.org/wp-content/themes/twentyseventeen/404.php on line 13
-[15-Nov-2018 02:16:40 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/poweri33/public_html/poweringphilanthropy.org/wp-content/themes/twentyseventeen/404.php on line 13
-[15-Nov-2018 05:22:48 CST6CDT] PHP Fatal error:  Call to undefined function get_template_part() in /home/poweri33/public_html/poweringphilanthropy.org/wp-content/themes/twentyseventeen/footer.php on line 22
-[17-Nov-2018 15:52:32 CST6CDT] PHP Fatal error:  Call to undefined function get_template_directory() in /home/poweri33/public_html/poweringphilanthropy.org/wp-content/themes/twentyseventeen/functions.php on line 16
-[22-Nov-2018 16:53:48 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/poweri33/public_html/poweringphilanthropy.org/wp-content/themes/twentyseventeen/404.php on line 13

@@ -1,0 +1,59 @@
+.bb-typography {
+	margin-bottom: 20px;
+	.wp-picker-container {
+		position: relative;
+		&:before {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.wp-picker-holder {
+			position: absolute;
+			left: 0px;
+			z-index: 10;
+		}
+	}
+	select {
+		padding: 3px 30px 3px 10px!important;
+		border-color: #ddd;
+		color: #888;
+		-webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	    background: url(../img/arrow-down.png) center right no-repeat;
+	}
+	
+	button, input[type="button"], 
+	input[type="submit"], 
+	input[type="reset"],
+	.bbbtn-typo-uploadimage {
+		background: #f7f7f7;
+		border: 1px solid #999;
+		display: block;
+		height: 36px;
+		width: 100%;
+		cursor: pointer;
+		border-radius: 3px;
+		text-transform: uppercase;
+		&:hover {
+			background-color: #eee;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.wpb_el_type_bb_typography {
+	.wpb_element_label {
+		background-color: #eee;
+		padding: 10px;
+		margin-top: 30px;
+	}
+}
+
+div[data-vc-shortcode-param-name*="bbvcedo_"] {
+	.vc_background-image {
+		display: none;
+	}
+}

@@ -1,0 +1,199 @@
+<?php 
+/**
+ * Checkout page template.
+ *
+ * This template is only used if Easy Digital Downloads is active.
+ *
+ * @package Reach
+ */
+
+if ( ! reach_has_edd() ) {
+	return;
+}
+
+if ( class_exists( 'Charitable_EDD_Cart' ) ) :
+	$cart      = new Charitable_EDD_Cart( edd_get_cart_contents(), edd_get_cart_fees( 'item' ) );
+	$campaigns = $cart->get_benefits_by_campaign();
+else :
+	$campaigns = array();
+endif;
+
+if(class_exists('PP_Team_Fundraising')){
+	$campaigns = PP_Team_Fundraising::remove_parent_from_campaign_benefits($campaigns);
+}
+
+
+get_header( 'stripped' );
+$url = get_the_post_thumbnail_url() ;
+
+
+$currency_helper = charitable_get_currency_helper();
+$campaign_title = $charges['campaign_title'];
+$enable_donor_covers_fee = $charges['donor-covers-fee'];
+			$enable_donor_covers_fee = $charges['donor-covers-fee'];
+if((isset($_POST['donor_selection']) && $_POST['donor_selection'] == "true") || !isset($_POST['donor_selection'])){
+		if($charges['donor-covers-fee']  ) {
+			$total =  $currency_helper->get_monetary_amount($charges['gross-amount']);
+			$data_total = $charges['gross-amount'];
+		}else{
+			$currency_helper = charitable_get_currency_helper();
+			$total = $currency_helper->get_monetary_amount(edd_get_cart_total()); 
+			$data_total = edd_get_cart_total(); 
+		}}else {
+			$currency_helper = charitable_get_currency_helper();
+			$total = $currency_helper->get_monetary_amount(edd_get_cart_total()); 
+			$data_total = edd_get_cart_total(); 
+		}
+
+	
+?>    
+<main id="main" class="site-main site-content cf checkout-edd-page " style="background-image:url('<?php echo $url; ?>') !important; ">  
+	<div class="layout-wrapper">   
+<section class="checkout-block ">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 form-block">
+					<p> You'r contributing to:</p>
+						<?php foreach ( $campaigns as $campaign_id => $benefits ) :
+					?>
+					<h4 class="mb-3 font-weight-bold"><?php echo get_the_title( $campaign_id ) ?></h4>
+					<div class="form-image">
+				
+						
+					<?php 
+					if ( has_post_thumbnail( $campaign_id ) ) :
+
+					echo get_the_post_thumbnail( $campaign_id, 'reach-post-thumbnail-medium' );
+
+					endif ?>
+
+
+					<?php endforeach ?>
+					<!---img src="images/image.png" alt="image" class="img-fluid"-->
+					<?php  foreach( edd_get_cart_fees() as $fee_id => $fee ) :
+
+print_r($fee);					?>
+					<ul class="amount-detail">
+					<li><label for="amount">DONATE AMOUNT:</label> <span><?php echo $fee['amount'];?></span></li>
+					<li><label for="amount">PROCESSING FEES:</label> <span><?php echo $currency_helper->get_monetary_amount($charges['total-fee-amount']); ?></span></li>
+					<li class="total-amount"><label for="amount">TOTAL CHARGE:</label> <span><?php echo $data_total ?></span></li>
+					<li><label> <p>I'd like to cover the processing fee so that 100% of my donation goes to <?php echo $campaign_title; ?>.</p> </label> <span><img src="images/btn.jpg" alt="btn-icon" class="img-fluid"></span></li>
+					<div id="switch-covers-fee" class="switch-button">
+					<input id="donor-covers-fee" type="checkbox" name="charge_data[donor-covers-fee]" value="yes" data-total="<?php echo edd_get_cart_total(); ?>" data-platform-fee="<?php echo $platform_percent_fee; ?>" data-stripe-percent-fee="<?php echo $stripe_percent_fee; ?>" 
+					<?php if((isset($_POST['donor_selection']) && $_POST['donor_selection'] == "true") || !isset($_POST['donor_selection'])){
+					 checked($enable_donor_covers_fee); }?>>
+					
+					<label for="donor-covers-fee"></label>
+				</div>
+					
+					</ul>
+					<?php  endforeach; ?>
+					</div>
+					
+					
+					<form  class="form-inline checkout-form" action="capture.php" >
+						<div class="col-lg-6 form-spacing">
+							<div class="form-group">
+								<label class="form-check-label text-left text-uppercase  mb-1" for="inlineCheckbox1 ">FIRST name</label>
+								<input type="text" class="form-control " name="first name" id="first_name" placeholder=" ">
+							</div>
+						</div>
+						<div class="col-lg-6 form-spacing">
+							<div class="form-group">
+								<label class="form-check-label text-left text-uppercase  mb-1" for="inlineCheckbox1 "> LAST name</label>
+								<input type="text" class="form-control " name="last name" id="last_name" placeholder=" ">
+							</div>
+						</div>
+						<div class="col-lg-12 form-spacing">
+							<div class="form-group ">
+								<label class="form-check-label text-left  text-uppercase  mb-1" for="inlineCheckbox1 ">Email</label>
+								<input type="email" class="form-control" name="email" id="email" placeholder=" ">
+							</div>
+						</div>
+						<div class="col-lg-12 form-spacing">
+							<div class="form-check d-block">
+								<label class="form-check-label text-left text-uppercase  mb-2" for="inlineCheckbox1 ">I'D LIKE MY DONATION TO DISPLAY PUBLICLY AS:</label>
+							</div>
+							<div class="form-check">
+								<div class="select-type col-lg-6">
+								  <label><input name="rememberme" type="checkbox" id="rememberme" value="forever">FULL NAME</label>
+								</div>
+								<div class="select-type col-lg-6">
+								  <label><input name="rememberme" type="checkbox" id="rememberme" value="forever"> ANONYMOUS</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12 form-spacing">
+							<div class="form-check">
+								<div class="select-type col-lg-4">
+								  <label><input name="rememberme" type="checkbox" id="rememberme" value="forever"> OTHER:</label>
+								</div>
+								<div class="select-type col-lg-8">
+								  <input type="text" class="form-control" name="email" id="email" placeholder=" ">
+								</div>
+							</div>
+						</div>
+						<div class=" col-lg-12 form-spacing">
+							<div class="quick-form-btn form-group">
+								<button type="button" id=""  class="btn btn-primary justify-content-center d-flex font-weight-bold ">donate now</button>
+							</div>
+						</div>
+						            <?php do_action( 'edd_checkout_table_footer_last' ); ?>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<?php /*
+	
+		<div id="primary" class="content-area <?php if ( empty( $campaigns ) ) : ?>no-sidebar<?php endif ?>">      
+		<?php if ( ! empty( $campaigns ) ) : ?>
+			<aside id="secondary" class="campaign-benefiting" role="complementary">
+
+				<p class="header"><?php echo _n( "You 're contributing to this campaign", "You 're contributing to these campaign", count( $campaigns ), 'reach' ) ?></p>
+				
+				<?php foreach ( $campaigns as $campaign_id => $benefits ) :
+?>
+<div class="campaign-title"><a href="<?php echo get_permalink( $campaign_id ) ?>" title="<?php the_title_attribute() ?>"><?php echo get_the_title( $campaign_id ) ?></a></div>
+<?php 
+					if ( has_post_thumbnail( $campaign_id ) ) :
+
+						echo get_the_post_thumbnail( $campaign_id, 'reach-post-thumbnail-medium' );
+
+					endif ?>
+
+					
+				<?php endforeach ?>
+
+			</aside>
+		<?php endif ?>
+		<?php
+
+		if ( have_posts() ) :
+			while ( have_posts() ) :
+				the_post();
+?>
+<article id="post-<?php the_ID() ?>" <?php post_class() ?>>			
+		
+			<div class="entry cf">
+				<?php //get_template_part( 'partials/featured-image' ) ?>
+				<?php the_content() ?>
+			</div>						
+
+		</article>
+<?php 
+			//	get_template_part( 'partials/content', 'checkout' );
+
+			endwhile;
+		endif;
+
+		?>
+		</div><!-- #primary --> */?>
+		
+	</div><!-- .layout-wrapper -->
+</main><!-- #main -->
+<?php
+
+get_footer( 'stripped' );

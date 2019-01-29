@@ -1,0 +1,59 @@
+/*
+Theme Name: 	Philanthropy Project Theme
+Theme URI: 		http://philanthropyproject.com/
+Author: 		Studio164a & The Philanthropy Project
+Author URI:		http://164a.com/
+Description: 	A child theme for Reach, customised for The Philanthropy Project.
+Template: 		reach
+Version: 		1.1.2
+*/
+
+#profile label {
+	font-size: 13px !important;
+}
+input[type="email"].ninja-forms-field{max-width:100%;}
+#nf-form-2-cont .field-wrap.submit-wrap {
+	text-align:center;
+}
+#nf-form-1-cont .field-wrap.submit-wrap {
+	text-align:right;
+}
+#nf-form-2-cont .field-wrap.submit-wrap input{
+	background: #00AFD8;
+    border-color: #00AFD8;
+    color: #fff;
+}
+#nf-form-2-cont .nf-field-container input, #nf-form-2-cont .nf-field-container  textarea  , #nf-form-2-cont  input[type="button"]{
+	font-family:Roboto !important;
+}
+
+#nf-form-1-cont .nf-field-container input, #nf-form-1-cont .nf-field-container  textarea  , #nf-form-1-cont  input[type="button"]{
+	font-family:Roboto !important;
+}
+#nf-form-3-cont .nf-form-content nf-fields-wrap{position: relative;width: 100%;display: inline-block;}
+#nf-form-3-cont .nf-form-content nf-field:nth-child(2)	{position: absolute;right: 0;top: 0;}
+#nf-form-3-cont .nf-before-form-content .nf-form-fields-required{display:none;}
+#nf-form-1-cont input[type="text"], #nf-form-1-cont textarea{max-width:100%;}
+.single-campaign #main.site-main .layout-wrapper {
+    width: 93%;
+}
+
+.charitable-form-field-image-crop .image-crop .cropit-placeholder{margin-left:0;}
+#charitable-campaign-suggested-donations .icon {padding-left :0;}
+	 
+#charitable-donation-amount-form input[type="text"], #charitable-donation-amount-form textarea{max-width:95%;}
+
+.page-id-38 main { width: 100%; padding-right: 42px; padding-right: 4.2rem; background: #00AFD8;}
+#charitable-profile-form .charitable-form-fields .charitable-fieldset::before{ background :no-repeat;}
+.pp-my-campaigns .campaign-summary .content-wrapper {
+    width: 100%;
+}
+#main.user-dashboard-content #charitable-campaign-submission-form .section-content{padding-bottom:0 !important;}
+#main.user-dashboard-content #charitable-campaign-submission-form .section-content .charitable-fieldset{margin-bottom:0;}
+#main.user-dashboard-content #charitable-campaign-submission-form .section-button-container{padding-top:0 !important;}
+
+
+.checkout-edd-page article { background: #ebf5f6; }
+.checkout-edd-page .content-area {	width: 50% !important;	padding-right: 42px; padding-right: 3.2rem; background: #ebf5f6; z-index: 9999 auto; margin-top: 80px; }
+.checkout-edd-page{  background-repeat:no-repeat; background-size:contain; }
+.checkout-edd-page .campaign-benefiting {display: block; padding-top: 42px; width:90%; padding-top: 4.2rem; margin-left: 55px;}

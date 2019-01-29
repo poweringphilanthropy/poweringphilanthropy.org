@@ -1,0 +1,186 @@
+/*
+Theme Name: 	Philanthropy Project Theme
+Theme URI: 		http://philanthropyproject.com/
+Author: 		Studio164a & The Philanthropy Project
+Author URI:		http://164a.com/
+Description: 	A child theme for Reach, customised for The Philanthropy Project.
+Template: 		reach
+Version: 		1.1.2
+*/
+
+#profile label {
+	font-size: 13px !important;
+}
+input[type="email"].ninja-forms-field{max-width:100%;}
+#nf-form-2-cont .field-wrap.submit-wrap , #nf-form-4-cont .field-wrap.submit-wrap {
+	text-align:center;
+}
+#nf-form-1-cont .field-wrap.submit-wrap {
+	text-align:right;
+}
+#nf-form-2-cont .field-wrap.submit-wrap input , #nf-form-4-cont .field-wrap.submit-wrap input{
+	background: #00AFD8;
+    border-color: #00AFD8;
+    color: #fff;
+}
+.single-campaign #main.site-main .sidebar-campaign.sidebar {
+	margin-bottom: 25px;
+}
+.mailchimp_email.email-field {
+	max-width: 79% !important;
+	background: #fff;
+	float: left;
+}
+
+.mailchimp_join_button {
+	position: absolute !important;
+	right: 40px;
+	top: 0px;
+	background: #fff  !important;
+	height: 50px;
+	width: 50px;
+	border-radius: 100% !important;
+	border-width: 1px;
+	color: #00AFD8 !important;
+	font-size: 14px !important;
+	padding: 0px !important;
+	border-color: #fff !important;
+	font-family: "Raleway" !important;
+	font-weight: 800;
+}
+.mc4wp-response {
+	width: 100%;
+	display: inline-block;
+}
+.mc4wp-form-fields{position:relative;}
+#nf-form-2-cont .nf-field-container input, #nf-form-2-cont .nf-field-container  textarea  , #nf-form-2-cont  input[type="button"]{
+	font-family:font-family: 'Roboto', sans-serif !important;
+}
+#ui-datepicker-div {
+	border: 1px solid;
+}
+.campaign-content.type-campaign {
+	margin-top: 16px;
+}
+#nf-form-1-cont .nf-field-container input, #nf-form-1-cont .nf-field-container  textarea  , #nf-form-1-cont  input[type="button"]{
+	font-family:font-family: 'Roboto', sans-serif !important;
+}
+.single-campaign #main.site-main #secondary .widget .title-wrapper .widget-title {
+	font-size: 20px;
+	padding: 9px 10px;
+}
+#nf-form-3-cont .nf-form-content nf-fields-wrap{position: relative;width: 100%;display: inline-block;}
+#nf-form-3-cont .nf-form-content nf-field:nth-child(2)	{position: absolute;right: 0;top: 0;}
+#nf-form-3-cont .nf-before-form-content .nf-form-fields-required{display:none;}
+#nf-form-1-cont input[type="text"], #nf-form-1-cont textarea{max-width:100%;}
+.single-campaign #main.site-main .layout-wrapper {
+    width: 93%;
+}
+.donors-list .donor-comment {
+	font-style: font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 17px;
+	color: #000;
+	background:none !important;
+	padding:0 !important;
+	font-style: unset !important;
+}
+.charitable-form-field-image-crop .image-crop .cropit-placeholder{margin-left:0;}
+#charitable-campaign-suggested-donations .icon {padding-left :0;}
+	 
+#charitable-donation-amount-form input[type="text"], #charitable-donation-amount-form textarea{max-width:95%;}
+
+.page-id-38 main { width: 100%; padding-right: 42px; padding-right: 4.2rem; background: #00AFD8;}
+#charitable-profile-form .charitable-form-fields .charitable-fieldset::before{ background :no-repeat;}
+.pp-my-campaigns .campaign-summary .content-wrapper {
+    width: 100%;
+}
+#main.user-dashboard-content #charitable-campaign-submission-form .section-content{padding-bottom:0 !important;}
+#main.user-dashboard-content #charitable-campaign-submission-form .section-content .charitable-fieldset{margin-bottom:0;}
+#main.user-dashboard-content #charitable-campaign-submission-form .section-button-container{padding-top:0 !important;}
+
+
+.checkout-edd-page article { background: #ebf5f6; }
+.checkout-edd-page .content-area {	width: 50% !important;	padding-right: 42px; padding-right: 3.2rem; background: #ebf5f6; z-index: 9999 auto; margin-top: 80px; }
+.checkout-edd-page{  background-repeat:no-repeat; background-size:contain; }
+.checkout-edd-page .campaign-benefiting {display: block; padding-top: 42px; width:90%; padding-top: 4.2rem; margin-left: 55px;}
+
+
+#edd_checkout_user_info input {
+	background: white !important;
+}
+#edd_checkout_form_wrap fieldset {
+	border: 1px solid #eee;
+	 padding: 0px;
+	 margin: 0px; 
+}
+#edd_checkout_wrap p {
+	padding-bottom: 0px !important;
+	margin-bottom: 0px !important;
+	width: 100%;
+	float: left;
+} 
+.single-campaign #main.site-main #primary .campaign-content .entry h2 {
+	margin-bottom: 24px;
+}
+.stripped #edd_checkout_wrap fieldset, .stripped #edd_checkout_wrap #edd_payment_mode_select {
+	border-width: 0;
+	 margin: 0px !important
+}
+
+#edd_checkout_wrap fieldset {
+	 margin: 0px;
+	 padding: 0px; 
+	 padding: 0rem;
+	 border: none;
+}
+
+#edd_purchase_submit {
+	margin: 0px !important;
+	padding: 0px !important;
+	float: right;
+}
+
+.donation_amount_label {
+	float: left;
+	width: 50%;
+}
+.title-wrapper {
+	margin-top: 14px;
+}
+
+.donation_amount_number {
+	float: left;
+	width: 50%;
+}
+
+.in_support_msg{ display: none;}
+#charitable_field_in_support {
+	min-height: 100px;
+}
+body #site-footer p  , body #site-footer li a{
+    font-family: font-family: 'Roboto', sans-serif;
+	font-size:17px;
+}
+li.donor.newli .donor-donation-amount{font-weight: bold;color: #00AFD8;width: 100px;float:left;font-size:21px;}
+li.donor.newli .donor-name{font-size: 21px;float: right;width:70%;}
+.widget.widget_charitable_donors_widget .donors-list li.donor.newli{width:100%;}
+.upper_portion{padding: 0 20px;display: inline-block;width : 441px;}
+.widget.widget_charitable_donors_widget .donors-list li.donor.newli .donor-name {font-size:21px;}
+
+
+@media screen and (max-width: 500px) {
+	.upper_portion {padding-left:5px;width:100%;}
+	li.donor.newli .donor-donation-amount {
+	width: 80px;
+	font-size: 18px;
+}li.donor.newli .donor-name {
+	width: 65%;
+}
+.widget.widget_charitable_donors_widget .donors-list li.donor.newli .donor-name {
+	font-size: 18px;
+}
+.mailchimp_email.email-field {
+	max-width: 65% !important;
+}
+}

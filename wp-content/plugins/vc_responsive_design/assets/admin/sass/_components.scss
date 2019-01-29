@@ -1,0 +1,178 @@
+/* Admin components */
+.bb_wrap  {
+	outline: 1px none;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+
+	.bb-row {
+		margin: 1em 0!important;
+	}
+
+	.bb-headtitle {
+		padding: 0px 20px 0px 80px!important;
+	    background: #fff!important;
+	    min-height: 80px!important;
+	    line-height: 80px!important;
+	    white-space: nowrap!important;
+		font-size: 17px!important;
+		font-weight: 600!important;
+		margin: 1em 0!important;
+		position: relative;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			height: 80px;
+			width: 80px;
+			background: url('../img/logo.png') center center no-repeat;
+			background-size: 60%;
+		}
+	}
+
+	.wp-list-table {
+		margin: 1em 0!important;
+		max-width: 100%;
+		overflow: auto;
+
+		tr {
+			height: 50px;
+    		line-height: 23px;
+		}
+
+		th {
+			color: #32373c;
+		}
+
+		td {
+			vertical-align: middle;
+			clear: none!important;
+			display: table-cell!important;
+			.img-icon {
+				max-width: 20px;
+			}
+		}
+	}
+
+	.button {
+		background: #999;
+		border-radius: 0 !important;
+		border: none !important;
+		text-shadow: none !important;
+		border: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+		line-height: 26px !important;
+		height: 27px !important;
+		margin: 2px 3px 2px 0px!important;
+		color: #fff !important;
+		padding: 0 10px 1px!important;
+
+		i, span {
+			font-size: inherit;
+			line-height: 27px!important;
+		}
+
+		&.success {
+			background: #27ae60;
+			&:hover, &:active, &:focus {
+				background: #2ecc71;
+			}
+		}
+		&.primary {
+			background: #3498db;
+			&:hover, &:active, &:focus {
+				background: #2c3e50;
+			}
+		}
+		&.danger {
+			background: #e74c3c;
+			&:hover, &:active, &:focus {
+				background: #c0392b;
+			}
+		}
+		&.warning {
+			background: #f1c40f;
+			&:hover, &:active, &:focus {
+				background: #f39c12;
+			}
+		}
+	}
+
+	.bb-form {
+		padding: 20px 30px !important;
+		margin: 1em 0!important;
+
+    	background: #fff;
+
+		.bb-field-row {
+			margin-bottom: 20px;
+		    border-bottom: 1px dashed #ddd;
+		    padding-bottom: 20px;
+		    display: table;
+		    width: 100%;
+
+			&:last-child {
+				padding-bottom: 0px;
+			    border-bottom: none;
+			    margin-bottom: 0px;
+			}
+
+			& > div {
+				display: table-cell;
+    			vertical-align: top;
+			}
+			.bb-label {
+				width: 300px;
+				label {
+					min-width: 200px;
+					font-weight: 600;
+					font-size: 14px;
+					display: inline-block;
+					line-height: 30px;
+				}
+			}
+			.bb-field {
+			    width: 250px;
+			}
+			.bb-desc {
+				display: block;
+				font-size: 11px;
+				line-height: 14px;
+				color: #aaa;
+				font-style: italic;
+			}
+		}
+	}
+
+	.text-center {
+		text-align: center;
+	}
+
+	.bb-txt-priority {
+		width: 50px;
+		text-align: center;
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button {
+		   opacity: 1;
+		}
+	}
+
+	.bb_edo_icon_depend {
+		display: none;
+	}
+
+	#bb_custom_image_icon {
+		display: block;
+		width: 100px;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.bb_deleteform {
+		display: inline-block;
+	}
+
+}

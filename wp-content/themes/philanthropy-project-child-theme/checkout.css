@@ -1,0 +1,168 @@
+.form-block li{
+	list-style:none;
+}
+.form-block p{
+	font-family: 'Roboto', sans-serif;
+	font-size:20px;
+	font-weight:500;
+	margin:0;
+}
+
+
+ a:hover{
+	text-decoration:none;
+}
+.checkout-block {
+    background-size: cover;
+}
+.checkout-form .form-group input {
+    width: 100%;
+    border-radius: 0;
+    line-height: 14px;
+    background: #fff;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+.select-type input.form-control {
+	width: 100%;
+    border-radius: 0;
+    line-height: 14px;
+    background: #fff;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+.form-image img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+.form-block {
+    background: #e9f4f5;
+    padding: 25px !important;
+}
+ul.amount-detail li {
+    color: #000;
+    display: block;
+    position: relative;
+    font-size: 16px;
+	text-align:right;
+	 font-weight: 600;
+}
+ul.amount-detail li span {
+    color: #000;
+    float: right;
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+	font-family: 'Roboto', sans-serif;
+}
+ul.amount-detail li.total-amount span {
+    font-weight: 700;
+}
+.amount-detail li label {
+	margin-right: 0;
+	text-align: right;
+	font-weight: normal;
+	width: 500px;
+	float: left;
+	padding:0;
+}
+.amount-detail li b{font-family: 'Roboto', sans-serif !important;}
+#switch-covers-fee input:checked + label {
+	margin-top: 7px;
+}
+.form-block .amount-detail{
+	display: inline-block;
+	margin-top: 26px;
+	width: 100%;
+}
+.form-block .checkout-form .form-group input{font-family: 'Roboto', sans-serif;}
+.form-block a h2{font-size:25px;}
+.form-block a {
+	color: #000;
+	text-decoration: underline; 
+	display: inline-block;
+	margin-bottom: 11px;
+}
+.checkout-block #edd_checkout_wrap{margin-bottom:41px;}
+.thanks-page .form-block{margin-bottom:42px;}
+.pledge_button#edd-purchase-button{
+	background: #23bae0;
+	color: #fff;
+	padding: 11px 15px;
+	font-size: 20px;
+}
+.form-block a:hover{color: #000;text-decoration: underline;}
+.amount-detail li.total-amount label {
+	 font-weight: 700;
+}
+.checkout_title{
+	padding: 23px 0;
+	font-weight: bold;
+	font-size: 30px;
+	color: #fff;
+}
+.quick-form-btn.form-group {
+    float: right;
+}
+.quick-form-btn button.btn {
+    background: #00AFD8;
+    border-color: #00AFD8;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.amount-detail img {
+	max-width: 100%;
+    height: auto;
+}
+.select-type {
+    text-align: left !important;
+    padding: 0 !important;
+}
+.select-type label {
+    text-align: left !important;
+    display: block !important;
+}
+.form-spacing {
+    margin: 8px 0;
+}
+.select-type label input {
+    margin-right: 8px;
+}
+.form-spacing .form-check label {
+	 text-align: left !important;
+    display: block !important;
+}
+.checkout-form{width:100%;}
+.form-block #charitable_field_donor_comment{border:none !important;}
+.form-block textarea#charitable_field_donor_comment_element {margin:0 !important; background:#fff; border:0; font-family: 'Roboto', sans-serif !important;}
+#edd_checkout_wrap{font-family:Roboto !important;}
+@media screen and (max-width: 429px) {
+	.amount-detail li label {
+		width: 179px;
+	}
+	#main.checkout-block {
+		padding: 0rem 2px 4.2rem;
+	}
+}
+@media screen and (max-width: 480px)  and (min-width: 430px)  {
+	#main.checkout-block {
+		padding: 0rem 2px 4.2rem;
+	}
+	.amount-detail li label {
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 600px) and (min-width: 481px) {
+	#main.checkout-block {
+		padding: 0rem 2px 4.2rem;
+	}
+	.amount-detail li label {
+		width: 270px;
+	}
+}
